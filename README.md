@@ -23,7 +23,7 @@ Additionally, I developed helper classes whose functionalities are utilized acro
     
 
   
-## Unity’s built-in state machine system.
+## Unity’s built-in state machine system
 
   
 
