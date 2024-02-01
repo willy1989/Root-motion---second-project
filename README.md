@@ -81,10 +81,7 @@ As this bug remains unsolved, I decided to switch from one animation to another 
 ## Considerations for the Next Iteration of the Project
 
 - Investigating whether animations perfectly tailored for root motion could eliminate the need for transform corrections.
-    
-- Identifying the precise causes of conflicts between root motion and script-based transform changes and exploring cleaner solutions within the animation/state system.
-    
-- Considering whether to abandon Unity’s state machine system or any visual representation of the system due to the complexity and maintenance demands introduced by just ten states.
-    
+- Identifying the precise causes of conflicts between root motion and script-based transform.
+- Considering whether to abandon Unity’s state machine system or any visual representation of the system due to the complexity and maintenance demands.
 - Addressing the gradual animation bug, possibly by checking if the animator is still transitioning (using animator.IsInTransition()).
     
