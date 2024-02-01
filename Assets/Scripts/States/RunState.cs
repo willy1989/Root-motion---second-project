@@ -5,14 +5,14 @@ using UnityEngine;
 public class RunState : StateMachineBehaviour
 {
     private AnimationManager animationManager;
-    private TransformManager transformManager;
+    private CharacterTransformManager transformManager;
     private InputManager inputManager;
 
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animationManager = animator.gameObject.GetComponent<AnimationManager>();
         inputManager = animator.gameObject.GetComponent<InputManager>();
-        transformManager = animator.gameObject.GetComponent<TransformManager>();
+        transformManager = animator.gameObject.GetComponent<CharacterTransformManager>();
 
         animationManager.PlayAnimation("Running");
     }

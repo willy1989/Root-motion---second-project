@@ -5,7 +5,7 @@ using UnityEngine;
 public class RunTurnState : StateMachineBehaviour
 {
     private AnimationManager animationManager;
-    private TransformManager transformManager;
+    private CharacterTransformManager transformManager;
     private InputManager inputManager;
 
 
@@ -13,7 +13,7 @@ public class RunTurnState : StateMachineBehaviour
     {
         animationManager = animator.gameObject.GetComponent<AnimationManager>();
 
-        transformManager = animator.gameObject.GetComponent<TransformManager>();
+        transformManager = animator.gameObject.GetComponent<CharacterTransformManager>();
 
         inputManager = animator.gameObject.GetComponent<InputManager>();
 

@@ -6,13 +6,13 @@ public class WalkingState : StateMachineBehaviour
 {
     private AnimationManager animationManager;
     private InputManager inputManager;
-    private TransformManager transformManager;
+    private CharacterTransformManager transformManager;
 
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animationManager = animator.gameObject.GetComponent<AnimationManager>();
         inputManager = animator.gameObject.GetComponent<InputManager>();
-        transformManager = animator.gameObject.GetComponent<TransformManager>();
+        transformManager = animator.gameObject.GetComponent<CharacterTransformManager>();
 
         animationManager.PlayAnimation("Walking");
     }

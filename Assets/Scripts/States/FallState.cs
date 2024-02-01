@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FallState : StateMachineBehaviour
 {
-    private TransformManager transformManager;
+    private CharacterTransformManager transformManager;
 
     private AnimationManager animationManager;
 
@@ -12,7 +12,7 @@ public class FallState : StateMachineBehaviour
 
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        transformManager = animator.gameObject.GetComponent<TransformManager>();
+        transformManager = animator.gameObject.GetComponent<CharacterTransformManager>();
         animationManager = animator.gameObject.GetComponent<AnimationManager>();
         fallMovement = animator.gameObject.GetComponent<FallMovement>();
 

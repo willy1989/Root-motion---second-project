@@ -5,13 +5,13 @@ using UnityEngine;
 public class RunJumpState : StateMachineBehaviour
 {
     private AnimationManager animationManager;
-    private TransformManager transformManager;
+    private CharacterTransformManager transformManager;
     private InputManager inputManager;
 
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animationManager = animator.gameObject.GetComponent<AnimationManager>();
-        transformManager = animator.gameObject.GetComponent<TransformManager>();
+        transformManager = animator.gameObject.GetComponent<CharacterTransformManager>();
         inputManager = animator.gameObject.GetComponent<InputManager>();
 
         animationManager.PlayAnimation("RunningJumping");

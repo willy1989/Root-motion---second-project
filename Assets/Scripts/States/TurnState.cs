@@ -5,13 +5,13 @@ using UnityEngine;
 public class TurnState : StateMachineBehaviour
 {
     private AnimationManager animationManager;
-    private TransformManager transformManager;
+    private CharacterTransformManager transformManager;
 
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animationManager = animator.gameObject.GetComponent<AnimationManager>();
 
-        transformManager = animator.gameObject.GetComponent<TransformManager>();
+        transformManager = animator.gameObject.GetComponent<CharacterTransformManager>();
 
         animationManager.PlayAnimation("Turning");
     }

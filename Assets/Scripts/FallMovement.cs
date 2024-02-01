@@ -6,12 +6,12 @@ public class FallMovement : MonoBehaviour
 {
     [SerializeField] private Transform characterTransform;
 
-    public void StartFalling(TransformManager transformManager)
+    public void StartFalling(CharacterTransformManager transformManager)
     {
         StartCoroutine(Falling(transformManager));
     }
 
-    private IEnumerator Falling(TransformManager transformManager)
+    private IEnumerator Falling(CharacterTransformManager transformManager)
     {
         if (transformManager.CharacterOnGround() == true)
             yield break;

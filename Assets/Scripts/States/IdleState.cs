@@ -7,7 +7,7 @@ public class IdleState : StateMachineBehaviour
 {
     private InputManager inputManager;
 
-    private TransformManager transformManager;
+    private CharacterTransformManager transformManager;
 
     private AnimationManager animationManager;
 
@@ -15,7 +15,7 @@ public class IdleState : StateMachineBehaviour
     {
         inputManager = animator.gameObject.GetComponent<InputManager>();
         animationManager = animator.gameObject.GetComponent<AnimationManager>();
-        transformManager = animator.gameObject.GetComponent<TransformManager>();
+        transformManager = animator.gameObject.GetComponent<CharacterTransformManager>();
 
         
         animationManager.PlayAnimation("Idling");

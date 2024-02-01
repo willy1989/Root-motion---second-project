@@ -10,8 +10,8 @@ public class AnimationManager : MonoBehaviour
 
     public void PlayAnimation(string animationName)
     {
-        //animationAnimator.Play(animationName);
-        animationAnimator.CrossFadeInFixedTime(animationName, defaultTransitionDuration);
+        animationAnimator.Play(animationName);
+        //animationAnimator.CrossFadeInFixedTime(animationName, defaultTransitionDuration);
     }
 
     public bool IsCurrentAnimationRunning()
